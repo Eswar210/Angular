@@ -1,0 +1,78 @@
+<!-- <div class="container">
+    <h2 class="text-center">Info</h2>
+    <form [formGroup]="signup" (ngSubmit)="sign()">
+      <div class="form-group col-md-3">
+        <label for="">Id</label>
+        <input formControlName="id" type="number" class="form-control" placeholder="Enter email" required>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="">Task Name</label>
+        <input formControlName="name" type="text" class="form-control" placeholder="Enter TaskName" required>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="">Task Status</label>
+        <input formControlName="status" type="text" class="form-control" placeholder="Status" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="signup.invalid">ADD</button>
+    </form>
+  </div>
+
+  <div class="table">
+    <table class="table table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Task Name</th>
+            <th>Task Status</th>
+        </tr>
+        <tr *ngfor="let a of new">
+            <td>{{a.id}}</td>
+            <td>{{a.name}}</td>
+            <td>{{a.status}}</td>
+        </tr>
+
+    </table>
+  </div>
+   -->
+
+   <div class="container">
+    <h2 class="text-center">Info</h2>
+
+    <form [formGroup]="signup" (ngSubmit)="sign()">
+      <div class="form-group col-md-3">
+        <label for="">Id</label>
+        <input formControlName="id" type="number" class="form-control" placeholder="Enter ID" required>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="">Task Name</label>
+        <input formControlName="name" type="text" class="form-control" placeholder="Enter Task Name" required>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="">Task Status</label>
+        <input formControlName="status" type="text" class="form-control" placeholder="Enter Task Status" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="signup.invalid">ADD</button>
+    </form>
+  </div>
+  
+  <div class="d-flex justify-content-center align-items-center">
+    <table class="table table-responsive w-75 ">
+        <tr>
+          <th class="text-center">Id</th>
+          <th class="text-center">Task Name</th>
+          <th class="text-center">Task Status</th>
+          <th class="text-center">Manage</th>
+        </tr>
+      <tbody>
+        <tr *ngFor="let a of new" >
+          <td class="text-center">{{a.id}}</td>
+          <td class="text-center">{{a.name}}</td>
+          <td class="text-center">{{a.status}}</td>
+          <td class="d-flex justify-content-around">
+            <button><i class="fa-regular fa-pen-to-square"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

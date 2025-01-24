@@ -1,0 +1,119 @@
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand ms-3" href="#">
+                <div class="d-flex col-4">
+                    <!-- <div class="col-md-1 col-s-1"> -->
+                        <img class="image animate__animated animate__lightSpeedInLeft ms-2" src="assets/icon.png" height="80" alt="Logo">
+                        <!-- </div> -->
+                        <div class="">
+                            <h2 class="animate__animated animate__lightSpeedInRight ">Brewtopia</h2>
+                            <p class="animate__animated animate__lightSpeedInRight "><i>- A paradise for coffee and tea lovers.</i></p>
+                        </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+         
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+               
+              <ul class="navbar-nav mt-2 ms-auto me-3 ">
+                <li class="nav-item active">
+                  <a class="nav-link" routerLink="/user/home">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/user/about">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/user/services">Services </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/user/contactus">ContactUs</a>
+                  </li>
+               
+               
+              </ul>
+            </div>
+             
+       
+          </nav>
+
+       
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="row w-100">
+            <div class="col-md-1 col-s-1">
+                <img class="image animate__animated animate__lightSpeedInLeft ms-2" src="assets/icon.png" height="80" alt="Logo">
+            </div>
+            <div class="col-md-5 col-s-5">
+                <h1 class="animate__animated animate__lightSpeedInRight mb-0">Brewtopia</h1>
+                <p class="animate__animated animate__lightSpeedInRight mb-0"><i>- A paradise for coffee and tea lovers.</i></p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto row">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Hello {{user}}Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</nav>
+
+  
+
+
+<!-- 
+<nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+             <div class="dropdown">
+                <a href="menu.html" class="dropbtn">Menu <span class="caret">&#8744;</span></a>
+                <div class="dropdown-content">
+                    <a href="menu.html#c">Coffee</a>
+                    <a href="menu.html#s">Snacks</a>
+                    <a href="menu.html#p">Pastries</a>
+                    <a href="menu.html#p">Desserts</a>
+                </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="specials.html">Specials</a>
+            <a href="Reachus.html">Reach Us</a>
+        </div>
+    </div>
+</nav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
