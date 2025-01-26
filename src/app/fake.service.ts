@@ -9,4 +9,5 @@ export class FakeService {
   getData(){
     return this.http.get('https://jsonplaceholder.typicode.com/posts')
   }
+  
 }
